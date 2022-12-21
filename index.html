@@ -15,7 +15,6 @@
 </head>
 
 <body>
-  <div id="app">等...</div>
   <!-- 在github上编辑插件 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
   <script>
@@ -26,7 +25,7 @@
       },
       basePath: '/', // 资源相对路径
       name: 'docsify website sample', // 文档标题，会显示在侧边栏顶部
-      navBar: true,
+      loadnavBar: true,
       nameLink: '/', // 点击文档标题后的跳转地址
       repo: 'BedrockcraftShiyi/docs', // 有repo属性则右上角会展示github图标，点击可进入
       loadSidebar: true, // 加载侧边栏
@@ -54,7 +53,7 @@
       homepage: 'docs/README.md',
       plugins: [
         EditOnGithubPlugin.create(
-          'https://github.com/BedrockcraftShiyi/docs/blob/master/docs/',
+          'https://github.com/BedrockcraftShiyi/docs/blob/main/docs/',
           null,
           function ( file ) {
             if ( file.indexOf( 'en' ) === -1 ) {
