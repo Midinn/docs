@@ -21,6 +21,10 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
   <script>
     window.$docsify = {
+      formatUpdated: '{MM}/{DD} {HH}:{mm}',
+      formatUpdated: function(time) {
+        return time;
+      },
       basePath: '/', // 资源相对路径
       name: 'docsify website sample', // 文档标题，会显示在侧边栏顶部
       navBar: true,
